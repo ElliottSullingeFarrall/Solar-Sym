@@ -1,0 +1,6 @@
+.venv
+.direnv
+
+__pycache__
+
+*.prof

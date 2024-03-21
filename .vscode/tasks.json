@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "presentation": {
+        "echo": false,
+        "showReuseMessage": true,
+        "clear": true
+    },
+    "tasks": [
+        {
+            "label": "Profile Script",
+            "type": "shell",
+            "command": "nix develop --command bash -c 'poetry run python -m cProfile -o ${fileDirname}/${fileBasenameNoExtension}.prof ${file} && snakeviz ${fileDirname}/${fileBasenameNoExtension}.prof'"
+        },
+        {
+            "label": "Install Module from Selection",
+            "type": "shell",
+            "command": "nix develop --command bash -c 'poetry add ${selectedText}'"
+        },
+        {
+            "label": "Uninstall Module from Selection",
+            "type": "shell",
+            "command": "nix develop --command bash -c 'poetry remove ${selectedText}'"
+        }
+    ]
+}

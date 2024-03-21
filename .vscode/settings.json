@@ -3,11 +3,13 @@
         "python": "poetry run python3 $fullFileName"
     },
     "cSpell.words": [
-        "colinear",
-        "Descarte",
+        "anim",
+        "blit",
         "edgecolors",
+        "facecolor",
         "facecolors",
         "linalg",
+        "tqdm",
         "xlim",
         "ylim"
     ]

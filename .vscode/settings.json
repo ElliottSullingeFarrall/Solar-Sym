@@ -4,11 +4,17 @@
     },
     "cSpell.words": [
         "anim",
+        "astropy",
+        "astroquery",
         "blit",
         "edgecolors",
         "facecolor",
         "facecolors",
+        "fontsize",
+        "isot",
+        "jplhorizons",
         "linalg",
+        "targetname",
         "tqdm",
         "xlim",
         "ylim"

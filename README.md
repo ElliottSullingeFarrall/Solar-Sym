@@ -14,22 +14,28 @@ $$a_i = \frac{F_i}{m_i}$$
 ## Simulating Trajectories 
 
 Now that we know how the bodies are accelerating, we can calculate their positions and velocities after some short time $\Delta t$ as
-$$\begin{align*}
+$$
+\begin{aligned}
     x_i(t + \Delta t) &= x_i(t) + \Delta t v_i(t) \\
     v_i(t + \Delta t) &= v_i(t) + \Delta t \frac{F_i(t)}{m_i}
-\end{align*}$$
+\end{aligned}
+$$
 This is known as the [Forward Euler](https://en.wikipedia.org/wiki/Euler_method#:~:text=In%20mathematics%20and%20computational%20science,with%20a%20given%20initial%20value.) method. 
 
 If we fix some small time increment $\Delta t > 0$ and discretise the time as $t_j = j \Delta t$. Then writing
-$$\begin{align*}
+$$
+\begin{aligned}
     x_i^{(j)} := x_i(t_j) \\
     v_i^{(j)} := v_i(t_j)
-\end{align*}$$
+\end{aligned}
+$$
 we get that
-$$\begin{align*}
+$$
+\begin{aligned}
     x_i^{(j+1)} &= x_i^{(j)} + \Delta t v_i^{(j)} \\
     v_i^{(j+1)} &= v_i^{(j)} + \Delta t \frac{F_i^{(j)}}{m_i}
-\end{align*}$$
+\end{aligned}
+$$
 We can iterate these calculations to approximate how the bodies will move over time. The smaller we make $\Delta t$, the more accurate the approximation.
 
 ## Extensions
